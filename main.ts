@@ -32,8 +32,8 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    basic.clearScreen()
     if (自分の手 == 1 && 相手の手 == 1) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . . . . .
             . # # # .
@@ -41,9 +41,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("draw")
     }
     if (自分の手 == 2 && 相手の手 == 2) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # . # .
             . # . # .
@@ -51,9 +53,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("draw")
     }
     if (自分の手 == 3 && 相手の手 == 3) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # # # .
             # # # # .
@@ -61,9 +65,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("draw")
     }
     if (自分の手 == 1 && 相手の手 == 2) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # . # .
             . # . # .
@@ -71,9 +77,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("win")
     }
     if (自分の手 == 2 && 相手の手 == 3) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # # # .
             # # # # .
@@ -81,9 +89,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("win")
     }
     if (自分の手 == 3 && 相手の手 == 1) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . . . . .
             . # # # .
@@ -91,9 +101,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("win")
     }
     if (自分の手 == 3 && 相手の手 == 2) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # . # .
             . # . # .
@@ -101,9 +113,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("lose")
     }
     if (自分の手 == 1 && 相手の手 == 3) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . # # # .
             # # # # .
@@ -111,9 +125,11 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("lose")
     }
     if (自分の手 == 2 && 相手の手 == 1) {
+        basic.showString("  opponent")
         basic.showLeds(`
             . . . . .
             . # # # .
@@ -121,6 +137,7 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             . # # # .
             `)
+        basic.clearScreen()
         basic.showString("lose")
     }
 })
